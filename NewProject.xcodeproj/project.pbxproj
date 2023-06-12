@@ -14,6 +14,10 @@
 		907DAD532A372AB0004395B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907DAD522A372AB0004395B5 /* Assets.xcassets */; };
 		907DAD562A372AB0004395B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907DAD542A372AB0004395B5 /* LaunchScreen.storyboard */; };
 		907DAD5E2A372AC9004395B5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 907DAD5D2A372AC9004395B5 /* .gitignore */; };
+		907DAD642A372C66004395B5 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907DAD632A372C66004395B5 /* Crypto.swift */; };
+		907DAD662A372E65004395B5 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907DAD652A372E65004395B5 /* Presenter.swift */; };
+		907DAD682A372EC7004395B5 /* ViewInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907DAD672A372EC7004395B5 /* ViewInputDelegate.swift */; };
+		907DAD6A2A373198004395B5 /* ViewOutputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907DAD692A373197004395B5 /* ViewOutputDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		907DAD552A372AB0004395B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		907DAD572A372AB0004395B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		907DAD5D2A372AC9004395B5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		907DAD632A372C66004395B5 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		907DAD652A372E65004395B5 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		907DAD672A372EC7004395B5 /* ViewInputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInputDelegate.swift; sourceTree = "<group>"; };
+		907DAD692A373197004395B5 /* ViewOutputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutputDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +67,51 @@
 		907DAD482A372AAC004395B5 /* NewProject */ = {
 			isa = PBXGroup;
 			children = (
-				907DAD492A372AAC004395B5 /* AppDelegate.swift */,
-				907DAD4B2A372AAC004395B5 /* SceneDelegate.swift */,
-				907DAD4D2A372AAC004395B5 /* ViewController.swift */,
+				907DAD5F2A372C0D004395B5 /* App */,
+				907DAD622A372C34004395B5 /* Models */,
+				907DAD612A372C28004395B5 /* Presenters */,
+				907DAD602A372C1E004395B5 /* Views */,
 				907DAD4F2A372AAC004395B5 /* Main.storyboard */,
 				907DAD522A372AB0004395B5 /* Assets.xcassets */,
 				907DAD542A372AB0004395B5 /* LaunchScreen.storyboard */,
 				907DAD572A372AB0004395B5 /* Info.plist */,
 			);
 			path = NewProject;
+			sourceTree = "<group>";
+		};
+		907DAD5F2A372C0D004395B5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				907DAD492A372AAC004395B5 /* AppDelegate.swift */,
+				907DAD4B2A372AAC004395B5 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		907DAD602A372C1E004395B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				907DAD4D2A372AAC004395B5 /* ViewController.swift */,
+				907DAD672A372EC7004395B5 /* ViewInputDelegate.swift */,
+				907DAD692A373197004395B5 /* ViewOutputDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		907DAD612A372C28004395B5 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				907DAD652A372E65004395B5 /* Presenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		907DAD622A372C34004395B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				907DAD632A372C66004395B5 /* Crypto.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907DAD682A372EC7004395B5 /* ViewInputDelegate.swift in Sources */,
+				907DAD642A372C66004395B5 /* Crypto.swift in Sources */,
+				907DAD6A2A373198004395B5 /* ViewOutputDelegate.swift in Sources */,
 				907DAD4E2A372AAC004395B5 /* ViewController.swift in Sources */,
 				907DAD4A2A372AAC004395B5 /* AppDelegate.swift in Sources */,
 				907DAD4C2A372AAC004395B5 /* SceneDelegate.swift in Sources */,
+				907DAD662A372E65004395B5 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
